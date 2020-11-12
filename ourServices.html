@@ -10,6 +10,8 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <!-- animation link  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Our Services</title>
   </head>
   <body>
@@ -70,7 +72,7 @@
               </p>
             </div>
             <div class="service-card">
-              <div class="card">
+              <div class="card"  data-aos="zoom-in"  data-aos-duration="1000">
                 <div class="icon">
                   <i class="fa fa-cloud" aria-hidden="true"></i>
                 </div>
@@ -81,7 +83,7 @@
                   sollicitudin id.
                 </p>
               </div>
-              <div class="card">
+              <div class="card"  data-aos="zoom-in"  data-aos-duration="1000">
                 <div class="icon">
                   <i class="fa fa-server" aria-hidden="true"></i>
                 </div>
@@ -92,7 +94,7 @@
                   Please contact us if you want to.
                 </p>
               </div>
-              <div class="card">
+              <div class="card"  data-aos="zoom-in"  data-aos-duration="1000">
                 <div class="icon">
                   <i class="fa fa-database" aria-hidden="true"></i>
                 </div>
@@ -103,7 +105,7 @@
                   sollicitudin id.
                 </p>
               </div>
-              <div class="card">
+              <div class="card"  data-aos="zoom-in"  data-aos-duration="1000">
                 <div class="icon">
                   <i class="fa fa-floppy-o" aria-hidden="true"></i>
                 </div>
@@ -114,7 +116,7 @@
                   sollicitudin id.
                 </p>
               </div>
-              <div class="card">
+              <div class="card"  data-aos="zoom-in"  data-aos-duration="1000">
                 <div class="icon">
                   <i class="fa fa-check" aria-hidden="true"></i>
                 </div>
@@ -125,7 +127,7 @@
                   sollicitudin id.
                 </p>
               </div>
-              <div class="card">
+              <div class="card"  data-aos="zoom-in"  data-aos-duration="1000">
                 <div class="icon">
                   <i class="fa fa-life-ring" aria-hidden="true"></i>
                 </div>
@@ -158,6 +160,10 @@
               <div class="user">
                 <h1>william smith</h1>
                 <h3>new co-founder</h3>
+              </div>
+              <div class="radio-btn">
+                <button class="next-btn">next</button>
+                <button class="prev-btn">prev</button>
               </div>
             </div>
           </div>
@@ -207,5 +213,9 @@
 
     <!-- Js file  -->
     <script src="assets/js/app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

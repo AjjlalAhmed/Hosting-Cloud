@@ -10,6 +10,8 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <!-- animation link  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Host Cloud</title>
   </head>
   <body>
@@ -51,22 +53,29 @@
                 <input type="text" placeholder="Enter your domain here" />
                 <button class="search-btn">search</button>
               </div>
+              <div id="result">
+                <p class="site-name"></p>
+                <p class="site-availability " id="available"></p>
+              </div>
               <div class="form-control">
-                <div class="check-box">
-                  <input type="checkbox" />
-                  <label>.com ($10/yr)</label>
+                <div class="radio-box">
+                  <input type="radio"  name="radio-dots" value=".com" />
+                  <label>.com</label>
                 </div>
-                <div class="check-box">
-                  <input type="checkbox" />
-                  <label>.net ($12/yr)</label>
+                <div class="radio-box">
+                  <input type="radio" name="radio-dots" value=".net"  />
+                  <label>.net</label>
                 </div>
-                <div class="check-box">
-                  <input type="checkbox" />
-                  <label>.org ($8/yr)</label>
+                <div class="radio-box">
+                  <input type="radio"  name="radio-dots" value=".org" />
+                  <label>.org</label>
                 </div>
-                <div class="check-box">
-                  <input type="checkbox" />
-                  <label>.in ($6/yr)</label>
+                <div class="radio-box">
+                  <input type="radio"  name="radio-dots" value=".in" />
+                  <label>.in</label>
+                </div>
+                <div class="radio-box">
+                  <input type="reset"  name="radio-dots" value="Reset" />
                 </div>
               </div>
             </form>
@@ -89,7 +98,7 @@
               </p>
             </div>
             <div class="service-card">
-              <div class="card">
+              <div class="card" data-aos="zoom-in"  data-aos-duration="1000">
                 <div class="icon">
                   <i class="fa fa-database" aria-hidden="true"></i>
                 </div>
@@ -100,7 +109,7 @@
                   sollicitudin id.
                 </p>
               </div>
-              <div class="card">
+              <div class="card" data-aos="zoom-in"  data-aos-duration="1000">
                 <div class="icon">
                   <i class="fa fa-database" aria-hidden="true"></i>
                 </div>
@@ -111,7 +120,7 @@
                   Please contact us if you want to.
                 </p>
               </div>
-              <div class="card">
+              <div class="card" data-aos="zoom-in"  data-aos-duration="1000">
                 <div class="icon">
                   <i class="fa fa-database" aria-hidden="true"></i>
                 </div>
@@ -136,7 +145,7 @@
               </p>
             </div>
             <div class="hosting-card">
-              <div class="card">
+              <div class="card" data-aos="fade-up">
                 <h3>basic cloud 50x</h3>
                 <h1>$15.5 <span>monthly</span></h1>
                 <p>
@@ -173,7 +182,7 @@
                   <button class="submit-btn">submit</button>
                 </div>
               </div>
-              <div class="card">
+              <div class="card" data-aos="fade-up">
                 <h3>cloud VPS 10x</h3>
                 <h1>$25.5 <span>monthly</span></h1>
                 <p>
@@ -210,7 +219,7 @@
                   <button class="submit-btn">submit</button>
                 </div>
               </div>
-              <div class="card">
+              <div class="card" data-aos="fade-up">
                 <h3>Advanced cloud</h3>
                 <h1>$45.5 <span>monthly</span></h1>
                 <p>
@@ -262,7 +271,7 @@
               <h1>cloud features</h1>
             </div>
             <div class="feature-card">
-              <div class="card">
+              <div class="card" data-aos="fade-up">
                 <div class="img">
                   <img src="assets/images/feature-01.png" alt="" />
                 </div>
@@ -276,7 +285,7 @@
                   </p>
                 </div>
               </div>
-              <div class="card">
+              <div class="card" data-aos="fade-up">
                 <div class="img">
                   <img src="assets/images/feature-01.png" alt="" />
                 </div>
@@ -290,7 +299,7 @@
                   </p>
                 </div>
               </div>
-              <div class="card">
+              <div class="card" data-aos="fade-up">
                 <div class="img">
                   <img src="assets/images/feature-01.png" alt="" />
                 </div>
@@ -304,7 +313,7 @@
                   </p>
                 </div>
               </div>
-              <div class="card">
+              <div class="card" data-aos="fade-up">
                 <div class="img">
                   <img src="assets/images/feature-01.png" alt="" />
                 </div>
@@ -318,7 +327,7 @@
                   </p>
                 </div>
               </div>
-              <div class="card">
+              <div class="card" data-aos="fade-up">
                 <div class="img">
                   <img src="assets/images/feature-01.png" alt="" />
                 </div>
@@ -332,7 +341,7 @@
                   </p>
                 </div>
               </div>
-              <div class="card">
+              <div class="card" data-aos="fade-up">
                 <div class="img">
                   <img src="assets/images/feature-01.png" alt="" />
                 </div>
@@ -361,13 +370,17 @@
                 <i class="fa fa-quote-right" aria-hidden="true"></i>
               </div>
               <div class="comment">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo,
+                Lorem ipsum dolor sit amet consectetur,adipisicing elit. Quo
                 tenetur incidunt natus in sed dicta nihil est vero eum
                 consectetur?
               </div>
               <div class="user">
                 <h1>william smith</h1>
                 <h3>new co-founder</h3>
+              </div>
+              <div class="radio-btn">
+                <button class="next-btn">next</button>
+                <button class="prev-btn">prev</button>
               </div>
             </div>
           </div>
@@ -411,7 +424,11 @@
       </footer>
     </div>
     <!-- Container -->
-
+    <!-- Js files  -->
     <script src="assets/js/app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

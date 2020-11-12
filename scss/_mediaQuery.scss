@@ -168,6 +168,36 @@
 }
 // max width 400px
 @media (max-width: 400px) {
+  #landing-sec{
+    .showcase{
+      .showcase-content{
+        #form{
+          #result{
+            
+            justify-content:space-around;
+            width: 98%;
+            margin: auto;
+            position: relative;
+            overflow: hidden;
+            flex-wrap: wrap;
+            P{
+              padding:10px 5px;
+            
+          }
+          .site-availability{
+            position: relative;
+          }
+          .site-name{
+            overflow: hidden;
+            white-space: nowrap;
+            width: 100px;
+          }
+        }
+        
+        }
+      }
+    }
+  }
   #main {
     // Services
     #service {
